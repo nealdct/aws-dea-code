@@ -1,9 +1,0 @@
-aws kinesis put-record --stream-name DEACourse --partition-key 123 --data dGVzdGRhdGEw
-
-aws kinesis put-record --stream-name DEACourse --partition-key 123 --data dGVzdGRhdGEx
-
-aws kinesis put-record --stream-name DEACourse --partition-key 123 --data dGVzdGRhdGEy
-
-aws kinesis put-record --stream-name DEACourse --partition-key 123 --data dGVzdGRhdGEz
-
-
