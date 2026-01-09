@@ -1,0 +1,44 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:AbortMultipartUpload",
+                "s3:CreateBucket",
+                "s3:DeleteObject",
+                "s3:ListBucket",
+                "s3:ListBucketMultipartUploads",
+                "s3:ListBucketVersions",
+                "s3:ListMultipartUploadParts",
+                "s3:PutBucketVersioning",
+                "s3:PutObject",
+                "s3:PutObjectTagging"
+            ],
+            "Resource": [
+                "arn:aws:s3:::dea-course-wayde",
+                "arn:aws:s3:::dea-course-wayde/*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetBucketVersioning",
+                "s3:GetObject",
+                "s3:GetObjectTagging",
+                "s3:GetObjectVersion",
+                "s3:ListBucket",
+                "s3:ListBucketMultipartUploads",
+                "s3:ListBucketVersions",
+                "s3:ListMultipartUploadParts"
+            ],
+            "Resource": [
+                "arn:aws:s3:::elasticmapreduce",
+                "arn:aws:s3:::dea-course-wayde",
+                "arn:aws:s3:::elasticmapreduce/*",
+                "arn:aws:s3:::dea-course-wayde/*",
+                "arn:aws:s3:::*.elasticmapreduce/*"
+            ]
+        }
+    ]
+}
